@@ -23,4 +23,10 @@ let resultado = soma(13,29);
 console.log("O resultado da soma é: "+ resultado);
 console.log("O resultado da soam é: "+ soma(13,29));
 
-//
+// Definindo uma função regular usando a palavra-chave "function"
+function saudação(nome){
+    console.log("Olá, tudo bem? " + nome + "! Como você está?");
+}
+
+// Chamando a função saudação e passando um argumento
+saudação("Rafael padilha");
