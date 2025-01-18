@@ -4,10 +4,11 @@
 const a = true;
 const b = false;
 
-const resultadoE1 = a && b;
+const resultadoE1 = a && b; //false
+const resultadoE2 = a && true; //true
 
-//console.log(`true && false: $fresultadoE1]`); // Saída: false
-//console.log(`true && true: $(resultadoE2]`); // Saída: true
+console.log(`true && false: ${resultadoE1}`); // Saída: false
+console.log(`true && true: ${resultadoE2}`); // Saída: true
 
 // Operador OU logico (||)
 
