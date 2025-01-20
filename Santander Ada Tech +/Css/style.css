@@ -3,6 +3,16 @@
     position: relative;
 }
 
+nav.menu {
+    position: fixed;
+    background-color: steelblue;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+}
+
+
+
 .box {
     height: 10rem;
     width: 20rem;
