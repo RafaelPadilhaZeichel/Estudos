@@ -36,11 +36,11 @@ nav.menu {
     background-color: limegreen;
 }
 
-.box:nth-child(1) {
+/*.box:nth-child(1) {
     position: absolute;
     top: 30px;
     left: 100px;
-}
+}*/
 
 /*.box:nth-child(2) {
     position: fixed;
