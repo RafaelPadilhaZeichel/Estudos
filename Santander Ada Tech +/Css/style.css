@@ -26,6 +26,12 @@ nav.menu {
     position: relative;
 }
 
+.contact-list h2 {
+    top: 92px;
+    position: sticky;
+    background-color: limegreen;
+}
+
 .box:nth-child(1) {
     position: absolute;
     top: 30px;
