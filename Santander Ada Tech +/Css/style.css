@@ -1,4 +1,7 @@
 /* Lidando com Flexbox*/
+.boxes {
+    position: relative;
+}
 
 .box {
     height: 10rem;
@@ -15,8 +18,17 @@
 
 .box:nth-child(1) {
     position: absolute;
+    top: 30px;
+    left: 100px;
+}
+
+.box:nth-child(2) {
+    position: fixed;
+    top: 15px;
+    left: 30px;
 }
 
 .box:nth-child(n + 2) {
-    display: none;
+    display: ;
+
 }
