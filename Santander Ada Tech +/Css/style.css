@@ -13,3 +13,10 @@
     position: relative;
 }
 
+.box:nth-child(1) {
+    position: absolute;
+}
+
+.box:nth-child(n + 2) {
+    display: none;
+}
