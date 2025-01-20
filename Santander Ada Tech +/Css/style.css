@@ -26,6 +26,10 @@ nav.menu {
     position: relative;
 }
 
+.contact-list {
+    position: relative;
+}
+
 .contact-list h2 {
     top: 92px;
     position: sticky;
