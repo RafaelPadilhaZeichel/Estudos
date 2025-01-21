@@ -1,16 +1,26 @@
+main {
+    /*padding: 7rem;*/
+}
+
 .boxes {
+    height: calc(100vh);
     position: relative;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .box {
-    height: 10rem;
-    width: 20rem;
-    margin: 1.5rem;
+    min-height: 10rem;
+    min-width: 20rem;
     padding: 1.5rem;
     background-color: blue;
     color: #fff;
     border: 10px solid red;
     display: inline-block;
     border-radius: 0.4rem;
-    position: relative;
+    font-size: 4rem;
 }
