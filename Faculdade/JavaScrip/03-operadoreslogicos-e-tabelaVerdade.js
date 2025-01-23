@@ -28,4 +28,8 @@ console.log(`!true: ${resultadoNao2}`); // Saída: false
 
 // combinação de operadores logicos
 
-//
+const resultadoCombo1 = (a || b) && !b;
+const resultadoCombo2 = (a && b) || a;
+
+console.log(`(true || false) && !false: ${resultadoCombo1}`); // Saída: true
+console.log(`!(true && false) || true: ${resultadoCombo2}`); // Saída: true
