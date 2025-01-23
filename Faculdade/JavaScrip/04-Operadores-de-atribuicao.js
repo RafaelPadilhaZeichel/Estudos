@@ -12,24 +12,29 @@
 }*/
 
 let a = 10;
-let b = 5;
 console.log(`Valor de a: ${a}`)
 
 
 // operador de atribuição de adição (+=)
-//console.log(`Após a += 5, valor de a: ${a}`)
+a += 5; // equivalente a a = a + 5
+console.log(`Após a += 5, valor de a: ${a}`)
 
 // operador de atribuição de subtração (-=)
-//console.log(`Após a -= 3, valor de a: ${a}`)
+a -= 3; // equivalente a a = a - 3
+console.log(`Após a -= 3, valor de a: ${a}`)
 
 // operador de atribuição de multiplicação (*=)
-//console.log(`Após a *= 2, valor de a: ${a}`)
+a *= 2; // equivalente a a = a * 2
+console.log(`Após a *= 2, valor de a: ${a}`) // comparação e não atribuição >=
 
 // operador de atribuição de divisão (/=)
-//console.log(`Após a /= 4, valor de a: ${a}`)
+a /= 4; // equivalente a a = a / 4
+console.log(`Após a /= 4, valor de a: ${a}`)
 
 // operador de atribuição de módulo (%=)
-//console.log(`Após a %= 4, valor de a: ${a}`)
+a %= 4; // equivalente a a = a % 4
+console.log(`Após a %= 4, valor de a: ${a}`)
 
 // operador de atribuição de exponenciação (**=)
-//console.log(`Após a **= 5, valor de a: ${a}`)
+a **= 3; // equivalente a a = a ** 5
+console.log(`Após a **= 3, valor de a: ${a}`)
