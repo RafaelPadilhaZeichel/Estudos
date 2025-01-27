@@ -24,11 +24,19 @@ section#principais-estilos {
     display: flex;
     gap: 20px;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #flexbox .container .box{
     width: 200px;
     height: 200px;
     background-color: rgb(30, 255, 0);
+
+}
+
+#flexbox .container .box-2{
+    width: 200px;
+    height: 400px;
+    background-color: rgb(255, 0, 170);
 }
