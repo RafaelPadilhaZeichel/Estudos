@@ -1,0 +1,22 @@
+.title {
+    font-size: 50px ;
+    font-weight: 700;
+}
+
+section#principais-estilos {
+    background-color: black;
+    color: white;
+}
+
+
+#principais-estilos .paragrafo{
+    font-size: 22px;
+    color: yellow;
+    line-height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#flexbox {
+
+
+}
