@@ -6,6 +6,9 @@
 section#principais-estilos {
     background-color: black;
     color: white;
+    padding: 50px;
+    margin: 20px 40px;
+    border: 10px solid red;
 }
 
 
