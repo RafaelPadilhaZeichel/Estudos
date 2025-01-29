@@ -1,0 +1,1 @@
+prompt("Digite sua idade: ");
