@@ -1,3 +1,11 @@
-const idade = 21;
-
-idade >= 18 ? console.log("Maior de idade") : console.log("Você eh menor de idade")
+if (50 > 100) {
+    console.log("Falta um tanto");
+  } else {
+    if ("1" == "-1") {
+      console.log("Quase lá");    
+    }
+  
+    if (!null) {
+      console.log("Sucesso");
+    }
+  }
