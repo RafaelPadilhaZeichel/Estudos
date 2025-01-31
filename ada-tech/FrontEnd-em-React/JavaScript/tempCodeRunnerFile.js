@@ -1,11 +1,10 @@
-if (50 > 100) {
-    console.log("Falta um tanto");
-  } else {
-    if ("1" == "-1") {
-      console.log("Quase lá");    
-    }
-  
-    if (!null) {
-      console.log("Sucesso");
-    }
-  }
+
+let notaDoAluno = Number(prompt.question("Digite quanto você tirou na prova para eu fazer uma média da turma:"));
+let acumulador = 0;
+
+while (notaDoAluno >= 0){
+    acumulador += notaDoAluno;
+    notaDoAluno = Number(prompt.require("Informe a próxima nota"));
+}
+
+console.log(notaDoAluno)
