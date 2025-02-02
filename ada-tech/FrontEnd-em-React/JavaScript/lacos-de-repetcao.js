@@ -28,18 +28,30 @@ const prompt = require("readline-sync")
 
 // Math.random() => Entre 0 e 1 
 
-const numeroAleatorio = parseInt(Math.random() * 10)
+//const numeroAleatorio = parseInt(Math.random() * 10)
 
-let numeroDoUsuario = Number(prompt.question("Informe um número entre 0 e 10: "))
+//let numeroDoUsuario = Number(prompt.question("Informe um número entre 0 e 10: "))
 
-let tentativasDoUsuario = 1;
+//let tentativasDoUsuario = 1;
 
-while (numeroAleatorio !== numeroDoUsuario){
-    console.log("Você errou o número!")
-    numeroDoUsuario = Number(prompt.question("Informe um número entre 0 e 10: "))
-    tentativasDoUsuario += 1
+//while (numeroAleatorio !== numeroDoUsuario){
+//    console.log("Você errou o número!")
+//    numeroDoUsuario = Number(prompt.question("Informe um número entre 0 e 10: "))
+//    tentativasDoUsuario += 1
+//}
+
+//console.log("Parabéns! Você acertou, o número era", numeroAleatorio, "Sua quantidade de tentativas foi", tentativasDoUsuario)
+
+// Loop com contador
+
+let contador = 0;
+
+while (contador <= 5){
+    console.log(contador);
+
+    if (contador === 2){
+        break;
+    }
+
+    contador++;
 }
-
-console.log("Parabéns! Você acertou, o número era", numeroAleatorio, "Sua quantidade de tentativas foi", tentativasDoUsuario)
-
-
