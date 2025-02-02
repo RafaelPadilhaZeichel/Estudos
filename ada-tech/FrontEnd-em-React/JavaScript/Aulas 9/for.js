@@ -17,15 +17,25 @@ console.clear();
 
 // Exemplo
 
-let maiorNumero = 0;
-let numeroInformado;
+// let maiorNumero = 0;
+// let numeroInformado;
 
-for(let i = 0; i < 5; i++){
-    numeroInformado = Number(prompt.question("Informe um número positivo: "))
+// for(let i = 0; i < 5; i++){
+//     numeroInformado = Number(prompt.question("Informe um número positivo: "))
 
-    if(numeroInformado > maiorNumero){
-        maiorNumero = numeroInformado
-    }
+//     if(numeroInformado > maiorNumero){
+//         maiorNumero = numeroInformado
+//     }
+// }
+
+// console.log("O maior número informado foi:",maiorNumero)
+
+// Exemplo
+
+const nome = "Rafael"
+
+// console.log(nome[0])
+
+for ( let i = 0; i < nome.length; i++){
+    console.log(nome[i])
 }
-
-console.log("O maior número informado foi:",maiorNumero)
