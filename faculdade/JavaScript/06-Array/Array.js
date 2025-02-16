@@ -1,15 +1,24 @@
-let arrayVazio1 = []; 
-let arrayVazio2 = new Array();
-let arrayCheio3 = [ 'Maça' , 'Banana' , 'Uva' ]; 
+let array1 = []; 
+let array2 = new Array();
+let array3 = [ 'Maça' , 'Banana' , 'Uva' ]; 
 
-console.log('Array 2', arrayVazio1)
-console.log('Array 2', arrayVazio2)
-console.log('Array 3', arrayCheio3)
+console.log('Array 2', array1)
+console.log('Array 2', array2)
+console.log('Array 3', array3)
 
-arrayVazio1 = ['Teste1'];
-arrayVazio2 = ['Teste2'];
-arrayCheio3 = ['Teste3'];
+// array1 = ['Teste1'];
+// array2 = ['Teste2'];
+// array3 = ['Teste3'];
 
-console.log('\nArray 1', arrayVazio1)
-console.log('Array 2', arrayVazio2)
-console.log('Array 3', arrayCheio3)
+console.log('\n Array 1', array1)
+console.log('   Array 2', array2)
+console.log('   Array 3', array3)
+
+console.log('\n Array após adicionar elementos:', array1)
+array1.push('ele1')
+array2.push('ele2')
+array3.push('ele3')
+
+console.log('\n Novo Array 1', array1)
+console.log('   Novo Array 2', array2)
+console.log('   Novo Array 3', array3)
