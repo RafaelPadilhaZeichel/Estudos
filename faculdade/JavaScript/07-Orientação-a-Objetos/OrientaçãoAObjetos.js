@@ -8,7 +8,7 @@ class Casa {
     this.temGaragem = temGaragem;
   }
 
-  // Método para descreveer a casa
+  // Método para descrever a casa
   descrever() {
     let descricao = `Essa casa é de cor ${this.cor}, tem ${this.numQuarto}, quarto(s)...`;
     if (this.temGaragem) {
