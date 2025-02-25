@@ -1,15 +1,16 @@
 // dEFINIÇÃO DA CLASSE 'Casa'
 
 class Casa {
-  // Construtor define s propriedades da classe
+  // Construtor define as propriedades da classe
   constructor(cor, numQuarto, temGaragem) {
     this.cor = cor;
     this.numQuarto = numQuarto;
     this.temGaragem = temGaragem;
   }
+
   // Método para descreveer a casa
   descrever() {
-    let descricao = `Esá casa é de cor ${this.cor}, tem ${this.numQuarto}, quarto(s)...`;
+    let descricao = `Essa casa é de cor ${this.cor}, tem ${this.numQuarto}, quarto(s)...`;
     if (this.temGaragem) {
       descricao += ` e tem uma garagem.`;
     } else {
