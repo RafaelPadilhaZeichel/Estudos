@@ -37,13 +37,26 @@ class Casa {
 
   // Método para verificar o status da casa
   verificaStatusDaCasa() {
-
     verificaStatusDaCasa(this)
-        .then((resultado) => {
-            console.log(resultado); // Resultado positivo
-        })
-        .catch((erro) => {
-            console.log(erro);
-        })
+      .then((resultado) => {
+        console.log(resultado); // Resultado positivo
+      })
+      .catch((erro) => {
+        console.log(erro);
+      });
   }
 }
+
+// Criação de um objeto (Instância da classe Casa)
+const minhaCasa = new Casa("Rua A, 123", "Azul", 3, true);
+
+// Manipulação de objeto e exibição da descrição
+console.log(minhaCasa.descrever());
+
+// Verificação do status da casa utilizando a promessa
+minhaCasa.verificaStatusDaCasa();
+
+// Caso de falha
+const casaInvalida = new Casa("", 0, "Verde", 2, false);
+console.log(casaInvalida.descrever());
+casaInvalida.verificaStatusDaCasa();
