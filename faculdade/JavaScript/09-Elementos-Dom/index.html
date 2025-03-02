@@ -130,6 +130,39 @@
             // Adicionando o novo elemento ao DOM
             document.body.appendChild(newDiv);
 
+            // Manipulação de Estilos (CSS)
+            const mainContent = document.querySelector('main');
+            mainContent.style.padding = '5em';
+            mainContent.style.backgroundColor = '#e0e0e0';
+
+            // Manipulação de Conteúdo
+            const h1Element = document.querySelector('h1');
+            h1Element.textContent = 'Título Atualizado Dinamicamente';
+
+            // Manipulação de Atributos
+            const imgElement = document.querySelector('img');
+            imgElement.setAttribute('alt', 'Imagem de Exemplo Atualizada');
+            imgElement.setAttribute('src', 'https://via.placeholder.com/200');
+
+            // Manipulação de Eventos
+            const submitButton = document.querySelector('button[type="submit"]');
+            submitButton.addEventListener('click', function(event) {
+                event.preventDefault();
+                alert('Formulário enviado!');
+            });
+
+            // Navegação no DOM
+            const secondSection = document.querySelectorAll('section')[1];
+            const nextSection = secondSection.nextElementSibling;
+            if (nextSection) {
+                nextSection.style.border = '2px dashed #000';
+            }
+
+            // Remoção de Elementos
+            const footerElement = document.querySelector('footer');
+            footerElement.remove(); 
+
+
         </script>
     </body>
 </html>
