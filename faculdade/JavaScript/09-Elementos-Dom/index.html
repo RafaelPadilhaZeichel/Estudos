@@ -117,6 +117,19 @@
             const emailInput = document.getElementsByName('email')[0];
             emailInput.placeholder = 'Digite seu email aqui';
 
+            // Criando um novo elemento
+            const newDiv = document.createElement('div');
+            
+            // Definindo atributos para o novo elemento
+            newDiv.setAttribute('class', 'alert alert-info');
+            newDiv.setAttribute('role', 'alert');
+            
+            // Adicionando conteúdo ao novo elemento
+            newDiv.textContent = 'Este é um novo alerta criado dinamicamente!';
+            
+            // Adicionando o novo elemento ao DOM
+            document.body.appendChild(newDiv);
+
         </script>
     </body>
 </html>
