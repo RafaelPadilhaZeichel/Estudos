@@ -1,2 +1,2 @@
 # Estudos
-Respositorio destinado aos meus estudos e testes
+Respositorio destinado aos meus estudos / testes / projetos.
