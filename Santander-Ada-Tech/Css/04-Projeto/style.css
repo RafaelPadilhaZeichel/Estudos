@@ -4,6 +4,30 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+}
+
+.content{
+    display: grid;
+    grid-template-areas: 
+    ""
+    ""
+    ""
+    ;
+}
+
+main{
+    grid-area: hero;
+}
+
+aside{
+    grid-area: form;
+}
+
+
+
 :root{
     font-size: 62.5%;
 }
@@ -15,7 +39,7 @@ aside h1{
     line-height: 75px;
 }
 
-aside h1 span{
+aside h1 span, main h2 span{
     color: #FF5678;
 }
 
@@ -23,13 +47,52 @@ main {
     width: 60rem;
     height: 52rem;
     border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 4.4rem 5.7rem;
+    border-radius: 1.2rem;
 }
 
 main h2 {
     max-width: 43rem;
     font-size: 3.6rem;
+    font-weight: 500;
 }
 
-main h2 span{
-    color: #FF5678;
+main .actions{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+main .actions a{
+    border-radius: 1.2rem;
+    text-decoration: none;
+    font-size: 2.4rem;
+    height: 5.5rem;
+    background-color: #35E6E9;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.4rem;
+}
+
+main .actions a + a{
+    background-color: #FF5678;
+    margin-top: 4.8rem;
+}
+
+main footer p{
+    margin-top: 8rem;
+    font-size: 1.6rem;
+}
+
+main footer a{
+    margin-top: 1rem,;
+    font-size: 1.8rem;
+    display: block;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
