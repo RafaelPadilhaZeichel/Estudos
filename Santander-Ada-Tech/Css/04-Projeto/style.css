@@ -12,18 +12,20 @@ body {
 .content{
     display: grid;
     grid-template-areas: 
-    ""
-    ""
-    ""
+    ". . . . ."
+    ". hero . form ."
+    ". hero . form ."
+    ". . . . ."
     ;
+    gap: 8.5rem;
 }
 
 main{
-    grid-area: hero;
+    grid-area: form;
 }
 
 aside{
-    grid-area: form;
+    grid-area: hero;
 }
 
 
@@ -89,10 +91,10 @@ main footer p{
 main footer a{
     margin-top: 1rem,;
     font-size: 1.8rem;
-    display: block;
     text-decoration: none;
+    color: black;
+    text-align: center;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    display: block; 
 }
