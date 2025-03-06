@@ -129,9 +129,10 @@ main form label {
 
 
 
-main form input {
+main form input, main form select {
     width: 489px;
     height: 5.5rem;
+    display: block;
 
     border: var(--default-border);
     background: white;
