@@ -129,7 +129,7 @@ main form label {
 
 
 
-main form input, main form select {
+main form :is(input,select) {
     width: 489px;
     height: 5.5rem;
     display: block;
@@ -137,6 +137,26 @@ main form input, main form select {
     border: var(--default-border);
     background: white;
     border-radius: var(--default-border-radius);
+}
+
+main form select {
+    appearance: none;
+}
+
+main form .select-div {
+    position: relative;
+}
+
+main form .select-div::after {
+    top: 4.8rem;
+    right: 1.2rem;
+    content: '\f107';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 600;
+    font-size: 2.2rem;
+    position: absolute;
+    z-index: 1;
+    color: #35E6E9;
 }
 
 main form .points {
