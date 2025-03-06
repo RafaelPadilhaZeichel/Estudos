@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+}
+
+.content{
+    display: grid;
+    grid-template-areas: 
+    ". . . . ."
+    ". hero . form ."
+    ". hero . form ."
+    ". . . . ."
+    ;
+    gap: 8.5rem;
+}
+
+main{
+    grid-area: form;
+}
+
+aside{
+    grid-area: hero;
+}
+
+
+
+:root{
+    font-size: 62.5%;
+    --default-border: 1px solid rgba(0, 0, 0, 0.15);
+    --default-border-radius: 1.2rem;
+    --default-border-color:#FF5678;
+}
+
+aside h1{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+aside h1 span, main h2 span{
+    color: var(--default-border-color);
+}
+
+main {
+    width: 60rem;
+    height: 52rem;
+    border: var(--default-border);
+    padding: 4.4rem 5.7rem;
+    border-radius: var(--default-border-radius);
+    position: relative;
+}
+
+main h2 {
+    max-width: 43rem;
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+
+main .actions{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+main .actions a{
+    border-radius: var(--default-border-radius);
+    text-decoration: none;
+    font-size: 2.4rem;
+    height: 5.5rem;
+    background-color: #35E6E9;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.4rem;
+}
+
+main .actions a + a {
+    background-color: var(--default-border-color);
+    margin-top: 4.8rem;
+}
+
+main header {
+    display: flex;
+    gap: 0 1.8rem;
+    align-items: center;
+}
+
+main header i {
+
+    font-size: 1.8rem;
+    color: var(--default-border-color);
+}
+
+main footer p {
+    margin-top: 8rem;
+    font-size: 1.6rem;
+}
+
+main footer a {
+    margin-top: 1rem,;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+
+
+    display: block; 
+}
+
+main form {
+    margin-top: 1.6rem;
+}
+
+main form label {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+
+
+main form input {
+    width: 489px;
+    height: 5.5rem;
+
+    border: var(--default-border);
+    background: white;
+    border-radius: var(--default-border-radius);
+}
+
+main form .points {
+    position: relative;
+}
+
+main form input + button {
+    position: absolute;
+    right: 0;
+    top: calc(2.7rem + 2.3rem);
+    right: -3.8rem;
+    background-color: transparent;
+    border: none;
+    color: #35E6E9;
+    font-size: 2.4rem;
+    cursor: pointer;
+}
