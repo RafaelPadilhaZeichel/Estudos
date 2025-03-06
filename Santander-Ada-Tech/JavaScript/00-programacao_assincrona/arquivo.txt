@@ -1,0 +1,3 @@
+Nome: Rafael;
+Idade: 21;
+Altura: 1.78;
