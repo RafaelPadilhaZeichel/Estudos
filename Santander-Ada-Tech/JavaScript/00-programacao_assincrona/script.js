@@ -36,30 +36,38 @@ const fs = require("fs"); // Importando o módulo fs
 
 //* Exemplo 1
 
-console.log("Antes da leitura do arquivo");
+// console.log("Antes da leitura do arquivo");
 
-const promessa = new Promise((resolve, reject) => {
-  fs.readFile(
-    "Santander-Ada-Tech/JavaScript/00-programacao_assincrona/arquivo.txt",
-    (erro, conteudoDoArquivo) => {
-      if (erro) {
-        reject("Erro ao ler o arquivo", erro);
-      } else {
-        resolve(conteudoDoArquivo.toString());
-      }
-    }
-  );
-}); // Criando uma nova Promise
+// function lerArquivoPromise() { 
+//     return new Promise((resolve, reject) => {
+//         fs.readFile(
+//           "Santander-Ada-Tech/JavaScript/00-programacao_assincrona/arquivo.txt",
+//           (erro, conteudoDoArquivo) => {
+//             if (erro) {
+//               reject("Erro ao ler o arquivo", erro);
+//             } else {
+//               resolve(conteudoDoArquivo.toString());
+//             }
+//           }
+//         );
+//       }); // Criando uma nova Promise      
+// }//criando uma função que retorna uma promise
+
+
+//Exitem funções que sao promesas, como a fetch, que é uma função que faz requisições HTTP
+// fetch()
+
 
 // console.log(promessa); // Promise { <pending> }
-promessa
-  .then((retornoDoResolveDaPromise) => {
-    console.log("Deu certo: ", retornoDoResolveDaPromise);
-  })
-  .catch((erro) => {
-    console.log("Deu errado: ", erro);
-  }).finally(() => {
-    console.log("Isso vai ser executado independente do resultado da Promise");
-  });
+// lerArquivoPromise()
+//   .then((retornoDoResolveDaPromise) => {
+//     console.log("Deu certo: ", retornoDoResolveDaPromise);
+//   })
+//   .catch((erro) => {
+//     console.log("Deu errado: ", erro);
+//   }).finally(() => {
+//     console.log("Isso vai ser executado independente do resultado da Promise");
+//   });
 
 //! 3. Resolvendo Promises usando Async/Await ->
+
