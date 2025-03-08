@@ -1,0 +1,19 @@
+Api
+
+Aprendendo sobre a utilidade de uma APi
+
+Instalando e utilizando o Insomnia para fazer teste de algumas API
+
+Tipos de API
+
+Privada
+A API é usada apenas internamente. Isso oferece às empresas um maior controle.
+
+Parceiros
+A API é compartilhada com parceiros de negócios específicos. Isso pode fornecer fluxos de receita adicionais sem comprometer a qualidade.
+
+Pública
+A API é disponibilizada para todos. Terceiros podem desenvolver aplicações que interajam com a sua API e isso pode se tornar uma fonte de inovação.
+
+
+A Api RestFull é a mais utilizada atualmente: é uma interface de programação de aplicativos (API) que permite a troca de informações entre sistemas de computador. Ela é baseada no estilo arquitetônico REST (transferência de estado representacional).
