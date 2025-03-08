@@ -2,6 +2,6 @@
 
 //Exemplo: configurando o Eslint, o eslint é uma configuração que faz com que o código fique mais limpo e organizado, para isso é necessário instalar o eslint e o prettier, e configurar o arquivo .eslintrc.json, para que o eslint funcione corretamente.
 
-const aula = "JSON";
+const aula = 'JSON';
 
 console.log(aula);
