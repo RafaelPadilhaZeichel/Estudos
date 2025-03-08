@@ -8,10 +8,11 @@
     "overrides": [
     ],
     "parserOptions": {
-        "ecmaVersion": "latest"
+        "ecmaVersion": "latest"         // isso faz com que o eslint aceite a versão mais recente do ECMAScript
     },
     "rules": {
-        "semi": ["error", "always"],
-        "quotes": ["error", "double"]
+        "semi": ["error", "always"],    // isso faz com que o eslint avise sobre ponto e vírgula
+        "quotes": ["error", "double"],  // isso faz com que o eslint avise sobre aspas simples
+        "no-unused-vars": "warn"        // Isso faz com que o eslint avise sobre variáveis não utilizadas
     }
 }
