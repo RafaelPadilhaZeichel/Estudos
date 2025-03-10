@@ -1,0 +1,1 @@
+Fech API -> é uma Api do browser, ela só funciona se o Js estiver rodando dentro do browser
