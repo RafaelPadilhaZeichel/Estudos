@@ -26,3 +26,6 @@ TypeScript só serve durante o desenvolvimento do código, quando estiver em pro
 4. Configurando o Ts
     `npx tsc --init`
     esse comando é para criar o arquivo onde vamos fazer as mudanças (tsconfig.json)
+
+
+obs: sempre que for fizer a alteração no TS é necessário utilizar `npx tsc` para a alteração aparecer no JS 

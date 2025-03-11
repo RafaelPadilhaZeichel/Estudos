@@ -8,3 +8,7 @@ console.log(numero1 + numero2); // NaN, isso é uma operação inválida
 console.log("Olá, mundo!");
 // TypeScript é um superconjunto de JavaScript que adiciona tipagem estática ao código
 // TypeScript é um conjunto de ferramentas que compila para JavaScript
+function somar(a, b) {
+    return a + b;
+}
+somar(1, 2); // 3
