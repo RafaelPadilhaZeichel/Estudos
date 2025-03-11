@@ -16,19 +16,49 @@
 
 // assync/await
 
-async function buscarCep() {
-    try {
-        const resposta = await fetch("https://viacep.com.br/ws/29092170/json/");
-        const dados = await resposta.json();
+// async function buscarCep() {
+//     try {
+//         const resposta = await fetch("https://viacep.com.br/ws/29092170/json/");
+//         const dados = await resposta.json();
 
-        console.log(dados);
+//         console.log(dados);
 
-    } catch (erro) {
-        console.log("Deu Errado!", erro);
-    } finally {
-        console.log("Terminou a execução");
-    }
- 
+//     } catch (erro) {
+//         console.log("Deu Errado!", erro);
+//     } finally {
+//         console.log("Terminou a execução");
+//     }
+
+// }
+
+// buscarCep();
+
+// Utilizando o DummyAPI
+
+async function getUsers() {
+  const resposta = await fetch("https://dummyapi.io/data/v1/user?created=1", {
+    headers: {
+      "app-id": "63f77cc1b7f489f0b351b30f",
+    },
+  });
+
+  const users = await resposta.json();
+
+  console.log(users.data);
 }
 
-buscarCep();
+async function createUser() {
+  const userData = {
+    name: "João",
+    email: "joao@gmail.com",
+  };
+
+  await fetch("https://dummyapi.io/data/v1/user?created", {
+    method: "POST",
+    headers: {
+      "app-id": "63f77cc1b7f489f0b351b30f",
+      "content-Type": "application/json",
+    },
+    body: JSON.stringify(userData),
+  });
+}
