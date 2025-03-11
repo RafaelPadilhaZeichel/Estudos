@@ -17,3 +17,8 @@ Npm Init e dar enter nas próximas etapas
             `npm install typescript -D`
 
 TypeScript só serve durante o desenvolvimento do código, quando estiver em produção vai ser em Js
+
+3. Utilizar o TypeScript instalado para transpilar o nosso código (Convereter o nosso código TS para JS).
+    `npx tsc typescript.ts`
+
+4. 
