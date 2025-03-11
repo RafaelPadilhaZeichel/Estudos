@@ -6,12 +6,29 @@
 // como lidar com uma promise
 // then/caltch
 
-fetch("https://viacep.com.br/ws/29092170/json/")
-  .then((response) => {
-    response.json().then((dados) => console.log(dados));
-  })
-  .catch((erro) => {
-    console.log(erro);
-  });
+// fetch("https://viacep.com.br/ws/29092170/json/")
+//   .then((response) => {
+//     response.json().then((dados) => console.log(dados));
+//   })
+//   .catch((erro) => {
+//     console.log(erro);
+//   });
 
 // assync/await
+
+async function buscarCep() {
+    try {
+        const resposta = await fetch("https://viacep.com.br/ws/29092170/json/");
+        const dados = await resposta.json();
+
+        console.log(dados);
+
+    } catch (erro) {
+        console.log("Deu Errado!", erro);
+    } finally {
+        console.log("Terminou a execução");
+    }
+ 
+}
+
+buscarCep();
