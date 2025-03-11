@@ -35,6 +35,7 @@
 
 // Utilizando o DummyAPI
 
+// esse código é para buscar usuários
 async function getUsers() {
   const resposta = await fetch("https://dummyapi.io/data/v1/user?created=1", {
     headers: {
@@ -46,6 +47,9 @@ async function getUsers() {
 
   console.log(users.data);
 }
+
+
+// esse código é para buscar um usuário específico
 
 async function getUser() {
     const resposta = await fetch("https://dummyapi.io/data/v1/user/5f7f8c1d5f6f6e0017e2f4b0", {
@@ -60,6 +64,10 @@ async function getUser() {
     console.log(user);
 }
 
+getUser();
+
+
+// esse código é para criar um novo usuário
 async function createUser() {
   const userData = {
     name: "João",
