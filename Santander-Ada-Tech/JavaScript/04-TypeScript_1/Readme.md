@@ -21,4 +21,8 @@ TypeScript só serve durante o desenvolvimento do código, quando estiver em pro
 3. Utilizar o TypeScript instalado para transpilar o nosso código (Convereter o nosso código TS para JS).
     `npx tsc typescript.ts`
 
-4. 
+    `npx tsc typescript.ts --watch` ele ficara assistindo as mudanças para não ter que fazer o comando toda vez que alterar o código
+
+4. Configurando o Ts
+    `npx tsc --init`
+    esse comando é para criar o arquivo onde vamos fazer as mudanças (tsconfig.json)
