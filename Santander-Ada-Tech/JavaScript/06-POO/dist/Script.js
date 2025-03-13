@@ -29,6 +29,17 @@ class Pessoa {
         this._cpf = newCpf;
     }
 }
+//! extends Pessoa: a classe Professor herda os atributos e métodos da classe Pessoa
+//! Definindo a abstração de um professor, heranca de pessoa (classe pai)
+class Professor extends Pessoa {
+    constructor(nome, idade, altura, peso, cpf, codigo) {
+        super(nome, idade, altura, peso, cpf);
+        this.codigo = codigo;
+    }
+    ensinar() {
+        console.log('Ensinando... ');
+    }
+}
 // Criando/instaciando um pessoa (individual/object) a partir da definicão da classe Pessoa
 const pessoa1 = new Pessoa('Maria', 25, 1.75, 70, '123.456.789-00');
 const pessoa2 = new Pessoa('Maria', 25, 1.75, 70, '123.456.789-01');
@@ -38,5 +49,9 @@ pessoa1.dormir();
 console.log(pessoa1.cpf); // é possível vizualizar o cpf, pois foi criado um acessor (getter) para o atributo privado _cpf, mas não é possível alterar o cpf, pois o atributo é privado, mas com o setter é possível alterar o cpf
 pessoa1.cpf = '123.456.789-99'; // alterando o cpf com o setter (acessor) 
 console.log(pessoa1.cpf);
-pessoa1.cpf = '123'; // alterando o cpf com o setter (acessor) 
+// pessoa1.cpf = '123'; // alterando o cpf com o setter (acessor) 
 console.log(pessoa1.cpf);
+// objeto da classe Professor
+const professor = new Professor('João', 30, 1.80, 80, '123.456.789-02', 'P001');
+console.log(professor);
+professor.ensinar();
