@@ -24,9 +24,14 @@ Métodos: Ações comuns realizadas pelos objetos de uma determinada classe. Ex:
 Conceitos chaves em POO
 
 Ecapsulamento
+    Cada calsse deve conter todas as informações necessárias para seu funcionamento bem como todos os métodos necessários para alterar essas informações. Idealmente, apenas objetos da prórpia classe poderão alterar seus atributos, e objetos de outras classes irão interagir com eles através de métodos.
+
 
 1. Private
+    atributo privado (não pode ser acessado fora da classe)
 
 2. Readonly
+    atributo somente leitura (não pode ser alterado) - readonly
 
 3. Acessors
+    acessor (getter) - permite acessar o valor do atributo privado
