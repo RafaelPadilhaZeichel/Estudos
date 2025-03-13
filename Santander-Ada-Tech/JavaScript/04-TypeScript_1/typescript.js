@@ -11,3 +11,15 @@ var pessoa =
     profissao: "Desenvolvedora",
     altura: 1.7,
 };
+var pessoas = {
+    "273.094.437-05": {
+        nome: "Rafael",
+        idade: 20,
+        altura: 1.77,
+    },
+    "263.084.437-05": {
+        nome: "João",
+        idade: 27,
+        altura: 1.90,
+    },
+};

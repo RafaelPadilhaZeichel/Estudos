@@ -191,4 +191,18 @@ type criterioExcluido = Exclude<criterio, "greater">; // isso exclui um valor es
 
 //! record
 
-type PersonRecord = Record<"nome" | "idade", string>; // isso cria um objeto com os atributos que você quer
+type Pessoas = Record<string, Person>;
+
+const pessoas: Pessoas = {
+  "273.094.437-05": {
+    nome: "Rafael",
+    idade: 20,
+    altura: 1.77,
+  },
+
+  "263.084.437-05": {
+    nome: "João",
+    idade: 27,
+    altura: 1.90,
+  },
+};
