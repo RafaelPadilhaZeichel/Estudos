@@ -43,3 +43,28 @@ const maioresDeIdade = numero.filter((idade) => idade >= 18)
 console.log(menoresDeIdade)
 
 console.log(maioresDeIdade)
+
+//tuplas são arrays de tamanho fixo e com tipos fixos
+
+const pessoa: [string, number] = ["Alice", 25]
+
+
+// tipagem de objetos em TypeScript é feita com interfaces ou types (tipos) 
+// Object types
+
+// interface
+interface Person {
+    nome: string;
+    idade: number;
+    profissao: string;
+    altura: number;
+}
+
+const pessoa2: Person = {
+    nome: "Alice",
+    idade: 25,
+    profissao: "Desenvolvedora",
+    altura: 1.70
+}
+
+// type

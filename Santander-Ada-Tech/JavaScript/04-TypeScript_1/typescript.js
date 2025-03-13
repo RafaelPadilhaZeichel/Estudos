@@ -26,3 +26,12 @@ var menoresDeIdade = numero.filter(function (idade) { return idade < 18; });
 var maioresDeIdade = numero.filter(function (idade) { return idade >= 18; });
 console.log(menoresDeIdade);
 console.log(maioresDeIdade);
+//tuplas são arrays de tamanho fixo e com tipos fixos
+var pessoa = ["Alice", 25];
+var pessoa2 = {
+    nome: "Alice",
+    idade: 25,
+    profissao: "Desenvolvedora",
+    altura: 1.70
+};
+// type
