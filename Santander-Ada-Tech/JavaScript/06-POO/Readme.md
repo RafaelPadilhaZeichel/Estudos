@@ -41,5 +41,6 @@ Herança:
     Se várias classes terão atributos e métodos em comum, não devemos ter que redigitá-los várias vezes. Ao invez disso, criamos uma classe com esses atributos comuns e as outras classes irão herdá-los
 
 polimorfismo
+    capacidade de um objeto poder ser referenciado de várias formas
 
 

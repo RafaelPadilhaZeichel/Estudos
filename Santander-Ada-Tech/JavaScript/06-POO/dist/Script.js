@@ -40,18 +40,21 @@ class Professor extends Pessoa {
         console.log('Ensinando... ');
     }
 }
-// Criando/instaciando um pessoa (individual/object) a partir da definicão da classe Pessoa
+//! Criando/instaciando um pessoa (individual/object) a partir da definicão da classe Pessoa
 const pessoa1 = new Pessoa('Maria', 25, 1.75, 70, '123.456.789-00');
 const pessoa2 = new Pessoa('Maria', 25, 1.75, 70, '123.456.789-01');
 console.log(pessoa1);
 pessoa1.falar();
 pessoa1.dormir();
-console.log(pessoa1.cpf); // é possível vizualizar o cpf, pois foi criado um acessor (getter) para o atributo privado _cpf, mas não é possível alterar o cpf, pois o atributo é privado, mas com o setter é possível alterar o cpf
-pessoa1.cpf = '123.456.789-99'; // alterando o cpf com o setter (acessor) 
+console.log(pessoa1.cpf); //* é possível vizualizar o cpf, pois foi criado um acessor (getter) para o atributo privado _cpf, mas não é possível alterar o cpf, pois o atributo é privado, mas com o setter é possível alterar o cpf
+pessoa1.cpf = '123.456.789-99'; //* alterando o cpf com o setter (acessor) 
 console.log(pessoa1.cpf);
-// pessoa1.cpf = '123'; // alterando o cpf com o setter (acessor) 
+//! pessoa1.cpf = '123'; // alterando o cpf com o setter (acessor) 
 console.log(pessoa1.cpf);
-// objeto da classe Professor
+//! objeto da classe Professor
 const professor = new Professor('João', 30, 1.80, 80, '123.456.789-02', 'P001');
 console.log(professor);
 professor.ensinar();
+//! Polimosfismo: capacidade de um objeto poder ser referenciado de várias formas
+console.log(pessoa1 instanceof Pessoa); // Isso está dizendo que pessoa1 é uma instância de Pessoa
+console.log(pessoa1 instanceof Professor); // Issso está dizendo que pessoa1 não é uma instância de Professor
