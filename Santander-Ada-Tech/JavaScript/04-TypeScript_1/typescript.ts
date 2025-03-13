@@ -74,6 +74,7 @@
 //     profissao?: string;
 //     altura: number;
 // }
+
 // type Profissao = {
 //     nome: string;
 //     salario: number;
@@ -92,26 +93,102 @@
 
 //! isso é um uniao de tipos e literal types, ou seja, um tipo que aceita um valor específico
 
-function chooseNumber(
-  numero1: number,
-  numero2: number,
-  criterio?: "greater" | "smaller" // é um tipo que aceita apenas "greater" ou "smaller"
-) {
-  switch (criterio) {
-    case "greater":
-      return numero1 > numero2 ? numero1 : numero2;
-    case "smaller":
-      return numero1 < numero2 ? numero1 : numero2;
-    default:
-      const numeroAleatorio = Math.random();
-      if (numeroAleatorio > 0.5) {
-        return numero1;
-      } else {
-        return numero2;
-      }
-  }
-}
+// function chooseNumber(
+//   numero1: number,
+//   numero2: number,
+//   criterio?: "greater" | "smaller" // é um tipo que aceita apenas "greater" ou "smaller"
+// ) {
+//   switch (criterio) {
+//     case "greater":
+//       return numero1 > numero2 ? numero1 : numero2;
+//     case "smaller":
+//       return numero1 < numero2 ? numero1 : numero2;
+//     default:
+//       const numeroAleatorio = Math.random();
+//       if (numeroAleatorio > 0.5) {
+//         return numero1;
+//       } else {
+//         return numero2;
+//       }
+//   }
+// }
 
-const numeroEscolhido = chooseNumber(10, 20, "greater");
+// const numeroEscolhido = chooseNumber(10, 20, "greater");
 
-console.log(numeroEscolhido);
+// console.log(numeroEscolhido);
+
+//! type aliases é uma forma de criar um tipo personalizado
+
+// type criterio = "greater" | "smaller";
+
+// function chooseNumber(numero1: number, numero2: number, criterio?: criterio): number {
+//   switch (criterio) {
+//     case "greater":
+//       return numero1 > numero2 ? numero1 : numero2;
+//     case "smaller":
+//       return numero1 < numero2 ? numero1 : numero2;
+//     default:
+//       const numeroAleatorio = Math.random();
+//       return numeroAleatorio > 0.5 ? numero1 : numero2;
+//   }
+// }
+
+// const numeroEscolhido = chooseNumber(10, 20, "greater");
+
+// console.log(numeroEscolhido);
+
+// function somar (a: number, b: number): number {
+//     return a + b
+// }
+
+// const resultado = somar(1, 2)
+
+// console.log(resultado)
+
+//! utilies types são tipos que já existem no TypeScript, a ideia é permitir que você crie novos tipos a partir de tipos existentes
+
+//! partial
+
+type Person = {
+  nome: string;
+  idade: number;
+  profissao?: string;
+  altura: number;
+};
+
+type PersonPartial = Partial<Person>;
+
+const outraPessoa: PersonPartial =
+  // isso torna os atributos opcionais
+  {};
+
+//! required
+
+type PersonRequired = Required<Person>;
+
+const pessoa: PersonRequired =
+  // isso torna os atributos obrigatórios
+  {
+    nome: "Alice",
+    idade: 25,
+    profissao: "Desenvolvedora",
+    altura: 1.7,
+  };
+
+//! pick
+
+type PersonPick = Pick<Person, "nome" | "idade">; // isso pega apenas os atributos que você quer
+
+//! omit
+
+type PersonOmit = Omit<Person, "profissao">; // isso omite os atributos que você não quer
+
+//! exclude
+
+type criterio = "greater" | "smaller";
+
+type criterioExcluido = Exclude<criterio, "greater">; // isso exclui um valor específico
+
+//! record
+
+type PersonRecord = Record<"nome" | "idade", string>; // isso cria um objeto com os atributos que você quer
