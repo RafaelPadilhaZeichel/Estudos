@@ -23,3 +23,23 @@
 // const nomeDoUsuario = prompt("Qual é o seu nome?")
 // console.log("Olá, " + nomeDoUsuario?.toLocaleUpperCase() + "!")
 
+// number[] ou Array<number> é um array de números
+// string[] ou Array<string> é um array de strings
+
+const numero: Array<number> = [1, 2, 3, 4, 5]
+
+// const misto: (number | string)[] = [1, 2, 3, 4, 5, "seis", "sete", "oito"]
+
+numero.push(10)
+numero.push(53)
+numero.push(18)
+numero.push(15)
+numero.push(66)
+
+const menoresDeIdade = numero.filter((idade) => idade < 18)
+
+const maioresDeIdade = numero.filter((idade) => idade >= 18)
+
+console.log(menoresDeIdade)
+
+console.log(maioresDeIdade)

@@ -13,3 +13,16 @@
 // somar(1, 2) // 3
 // const nomeDoUsuario = prompt("Qual é o seu nome?")
 // console.log("Olá, " + nomeDoUsuario?.toLocaleUpperCase() + "!")
+// number[] ou Array<number> é um array de números
+// string[] ou Array<string> é um array de strings
+var numero = [1, 2, 3, 4, 5];
+// const misto: (number | string)[] = [1, 2, 3, 4, 5, "seis", "sete", "oito"]
+numero.push(10);
+numero.push(53);
+numero.push(18);
+numero.push(15);
+numero.push(66);
+var menoresDeIdade = numero.filter(function (idade) { return idade < 18; });
+var maioresDeIdade = numero.filter(function (idade) { return idade >= 18; });
+console.log(menoresDeIdade);
+console.log(maioresDeIdade);
