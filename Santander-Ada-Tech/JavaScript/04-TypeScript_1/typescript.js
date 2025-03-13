@@ -23,3 +23,4 @@ var pessoas = {
         altura: 1.90,
     },
 };
+//! Evitar ao máximo utilizar Any 
