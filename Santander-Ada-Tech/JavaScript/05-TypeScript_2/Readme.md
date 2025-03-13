@@ -1,0 +1,1 @@
+Foi continuado na pasta TypeScript 1
