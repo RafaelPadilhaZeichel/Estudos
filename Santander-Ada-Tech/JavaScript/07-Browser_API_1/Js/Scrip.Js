@@ -19,49 +19,46 @@ console.log(emailInput);
 
 // 4. Pelo Id da tag
 
-const JsImg = document.getElementById('logo-JS'); // com esse método, selecionamos o elemento que possui o id 'logo-JS'
+const JsImg = document.getElementById("logo-JS"); // com esse método, selecionamos o elemento que possui o id 'logo-JS'
 
 console.log(JsImg);
 
 // 5. Pelo querySelector - seleciona o primeiro elemento que corresponde ao seletor especificado
 
-const imagem = document.querySelector('body > img'); // seleciona a primeira imagem que está dentro do body
+const imagem = document.querySelector("body > img"); // seleciona a primeira imagem que está dentro do body
 
 console.log(imagem);
 
-
-const paragrafos = document.querySelectorAll('p');
+const paragrafos = document.querySelectorAll("p");
 console.log(paragrafos);
 
 console.clear();
 
 // acessando e alterando o conteúdo de um elemento HTML
 
-const primeiroParagrafo = document.querySelector('p.paragrafo');
- 
+const primeiroParagrafo = document.querySelector("p.paragrafo");
 
 console.log(primeiroParagrafo);
 
-console.log('textContent:', primeiroParagrafo.textContent);
-console.log('innerHTML:', primeiroParagrafo.innerHTML);
+console.log("textContent:", primeiroParagrafo.textContent);
+console.log("innerHTML:", primeiroParagrafo.innerHTML);
 
-
-primeiroParagrafo.textContent = 'Texto alterado via JS';
-primeiroParagrafo.innerHTML = '<strong>Texto alterado via JS</strong>';
+primeiroParagrafo.textContent = "Texto alterado via JS";
+primeiroParagrafo.innerHTML = "<strong>Texto alterado via JS</strong>";
 
 console.clear();
 
 // value - utilizado para acessar e alterar o valor de um input
 
-emailInput[0].value = '@gmail.com';
+emailInput[0].value = "@gmail.com";
 
 // adicionando elementos HTML na pagina com o método createElement
 
-const listaUl = document.querySelector('ul#lista'); // Selecionando a lista ul
-const listaLis = document.querySelectorAll('ul > li'); // Selecionando todos os elementos li
+const listaUl = document.querySelector("ul#lista"); // Selecionando a lista ul
+const listaLis = document.querySelectorAll("ul > li"); // Selecionando todos os elementos li
 
-const novoElemento = document.createElement('li');
-novoElemento.textContent = 'Item adicionado via JS'; // Adicionando um texto ao elemento
+const novoElemento = document.createElement("li");
+novoElemento.textContent = "Item adicionado via JS"; // Adicionando um texto ao elemento
 
 // listaUl.appendChild(novoElemento); // Adicionando o elemento como filho do body
 
@@ -70,5 +67,7 @@ console.log(novoElemento);
 console.clear();
 
 // Adicionando em uma ordem específica
-
 listaUl.insertBefore(novoElemento, listaLis[1]); // isso fez com que o novo elemento fosse adicionado antes do segundo elemento li
+
+// Removendo elementos HTML da página com o método removeChild
+listaUl.removeChild(listaLis[0]); // isso removeu o primeiro elemento li da lista
