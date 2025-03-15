@@ -86,7 +86,7 @@ class Professor extends Pessoa {
 }
 
 
-//! Criando/instaciando um pessoa (individual/object) a partir da definicão da classe Pessoa
+//! Criando/instaciando uma pessoa (individual/object) a partir da definicão da classe Pessoa
 
 const pessoa1 = new Pessoa('Maria', 25, 1.75, 70, '123.456.789-00');
 const pessoa2 = new Pessoa('Maria', 25, 1.75, 70, '123.456.789-01');
