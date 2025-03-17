@@ -1,37 +1,36 @@
-const aumentarBotao = document.querySelector('#aumentar-botao')
-const diminuirBotao = document.querySelector('#diminuir-botao')
+const aumentarBotao = document.querySelector("#aumentar-botao");
+const diminuirBotao = document.querySelector("#diminuir-botao");
 
-const contadorElemento = document.querySelector('#contador')
+const contadorElemento = document.querySelector("#contador");
 
-const input = document.querySelector('#input')
+const input = document.querySelector("#input");
 
-aumentarBotao.addEventListener('click', () => {
-   const valorAtual = Number(contadorElemento.textContent)
+aumentarBotao.addEventListener("click", () => {
+  const valorAtual = Number(contadorElemento.textContent);
 
-   contadorElemento.textContent = valorAtual + 1
+  contadorElemento.textContent = valorAtual + 1;
 
-   aumentarBotao.classList.add('btn')
-   diminuirBotao.classList.remove('btn')
-})
+  aumentarBotao.classList.add("btn");
+  diminuirBotao.classList.remove("btn");
+});
 
-diminuirBotao.addEventListener('click', () => {
-    const valorAtual = Number(contadorElemento.textContent)
- 
-    contadorElemento.textContent = valorAtual - 1
+diminuirBotao.addEventListener("click", () => {
+  const valorAtual = Number(contadorElemento.textContent);
 
-    
-   diminuirBotao.classList.add('btn')
-   aumentarBotao.classList.remove('btn')
- })
+  contadorElemento.textContent = valorAtual - 1;
 
-input.addEventListener('input', () => {
-    console.log(input.value)
-})
+  diminuirBotao.classList.add("btn");
+  aumentarBotao.classList.remove("btn");
+});
+
+input.addEventListener("input", () => {
+  console.log(input.value);
+});
 
 // Adicionando estilos inline no elemento contador
 
-contadorElemento.style.color = 'red';
-contadorElemento.style.padding = '0 2rem'
+contadorElemento.style.color = "red";
+contadorElemento.style.padding = "0 2rem";
 
 // Mamnipular Classes
 
@@ -39,20 +38,41 @@ console.log(diminuirBotao.classList);
 
 // Mudando o tema da página
 
-const themebutton = document.querySelector('#theme')
+const themebutton = document.querySelector("#theme");
 
-let darkTheme = false;
+let darkTheme;
 
-themebutton.addEventListener('click', () => {
-    darkTheme = !darkTheme  
+// definindo uma função que será executado ao carregar a janela
+window.onload = () => {
 
-    const body = document.querySelector('body')
+    
+  const isDarkThemeStorage = localStorage.getItem("isDarkTheme");
 
-    if (darkTheme) {
-        body.style.backgroundColor = 'black'
-        body.style.color = 'white'
-    } else {
-        body.style.backgroundColor = 'white'
-        body.style.color = 'black'
-    }
-})
+  darkTheme = isDarkThemeStorage === "true";
+
+  const body = document.querySelector("body");
+
+  if (darkTheme) {
+    body.style.backgroundColor = "black";
+    body.style.color = "white";
+  } else {
+    body.style.backgroundColor = "white";
+    body.style.color = "black";
+  }
+};
+
+themebutton.addEventListener("click", () => {
+  darkTheme = !darkTheme;
+
+  localStorage.setItem("isDarkTheme", darkTheme);
+
+  const body = document.querySelector("body");
+
+  if (darkTheme) {
+    body.style.backgroundColor = "black";
+    body.style.color = "white";
+  } else {
+    body.style.backgroundColor = "white";
+    body.style.color = "black";
+  }
+});
