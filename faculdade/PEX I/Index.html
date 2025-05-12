@@ -2,14 +2,18 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Érgo - Projetos Estruturais</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ÉRGO Estruturas</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
-
   <header>
-    <div class="logo">érgo</div>
+    <div class="logo">ÉRGO</div>
     <nav>
       <ul>
         <li><a href="#inicio">Início</a></li>
@@ -17,36 +21,39 @@
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#portfolio">Portfólio</a></li>
         <li><a href="#orcamento">Orçamento</a></li>
-        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="hero" id="inicio">
     <div class="hero-text">
-      <h1>PROJETOS ESTRUTURAIS<br>SOB MEDIDA</h1>
+      <h1>Projetos Estruturais com Qualidade</h1>
     </div>
   </section>
 
   <section class="sobre" id="sobre">
     <h2>Sobre Nós</h2>
-    <p>Especializados em projetos estruturais, oferecemos soluções sob medida com foco em segurança, eficiência e inovação, baseados em anos de experiência no setor.</p>
+    <p>Somos especialistas em projetos estruturais, fundações, visita em obra e laje plana protendida.</p>
   </section>
 
   <section class="servicos" id="servicos">
     <h2>Serviços</h2>
     <div class="cards">
       <div class="card">
-        <img src="icons/laje.svg" alt="Lajes">
-        <p>Lajes Protendidas</p>
+        <img src="images/estrutura.png" alt="Projeto Estrutural"/>
+        <p>Projeto Estrutural</p>
       </div>
       <div class="card">
-        <img src="icons/fundacao.svg" alt="Fundações">
+        <img src="images/fundacao.png" alt="Fundações"/>
         <p>Fundações</p>
       </div>
       <div class="card">
-        <img src="icons/estrutura.svg" alt="Análise">
-        <p>Análise Estrutural</p>
+        <img src="images/visita.png" alt="Visita Técnica"/>
+        <p>Visita Técnica</p>
+      </div>
+      <div class="card">
+        <img src="images/laje.png" alt="Laje Protendida"/>
+        <p>Laje Protendida</p>
       </div>
     </div>
   </section>
@@ -54,42 +61,32 @@
   <section class="portfolio" id="portfolio">
     <h2>Portfólio</h2>
     <div class="galeria">
-      <img src="images/predio.jpg" alt="Projeto 1" />
-      <img src="images/predio.jpg" alt="Projeto 2" />
-      <img src="images/predio.jpg" alt="Projeto 3" />
+      <img src="images/obra1.jpg" alt="Obra 1"/>
+      <img src="images/obra2.jpg" alt="Obra 2"/>
+      <img src="images/obra3.jpg" alt="Obra 3"/>
     </div>
   </section>
 
-  <section class="orcamento" id="orcamento">
-    <h2>Solicite um Orçamento</h2>
-    <form>
-      <input type="text" name="nome" placeholder="Seu nome" required />
-      <input type="email" name="email" placeholder="Seu e-mail" required />
-      <input type="tel" name="telefone" placeholder="Telefone" />
-      <textarea name="mensagem" placeholder="Descreva seu projeto" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <footer id="contato">
-    <h2>Contato</h2>
-    <p>contato@argo.com.br</p>
-    <p>(09) 1234-6978</p>
-    <div class="redes">
-      <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
-      <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
-      <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+  <section class="orcamento-contato" id="orcamento">
+    <div class="orcamento">
+      <h2>Solicitar Orçamento</h2>
+      <form action="https://formsubmit.co/rafael20242024@outlook.com" method="POST" target="_blank">
+        <input type="text" name="nome" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu e-mail" required />
+        <textarea name="mensagem" placeholder="Descreva seu projeto" required></textarea>
+        <button type="submit">Enviar por E-mail</button>
+      </form>
     </div>
-  </footer>
+    <div class="contato">
+      <h2>Contato</h2>
+      <p>Email: rafael20242024@outlook.com</p>
+      <p>WhatsApp: (27) 99589-3556</p>
+    </div>
+  </section>
 
   <div class="icones-fixos">
-    <a href="https://wa.me/556912346978" target="_blank" class="whatsapp">
-      <img src="icons/whatsapp.svg" alt="WhatsApp">
-    </a>
-    <a href="https://instagram.com/ergo" target="_blank" class="instagram">
-      <img src="icons/instagram.svg" alt="Instagram">
-    </a>
+    <a href="https://wa.me/5527995893556" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp"/></a>
+    <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"/></a>
   </div>
-
 </body>
 </html>
