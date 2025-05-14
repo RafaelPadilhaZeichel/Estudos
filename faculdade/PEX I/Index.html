@@ -5,13 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ÉRGO Estruturas</title>
   <link rel="stylesheet" href="style.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     html {
       scroll-behavior: smooth;
     }
+    #preloader {
+      background: #1a1a1a url('images/loading.gif') no-repeat center center;
+      background-size: 60px;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+    }
   </style>
 </head>
 <body>
+  <div id="preloader"></div>
+
   <header>
     <div class="logo">ÉRGO</div>
     <nav>
@@ -31,12 +42,12 @@
     </div>
   </section>
 
-  <section class="sobre" id="sobre">
+  <section class="sobre" id="sobre" data-aos="fade-up">
     <h2>Sobre Nós</h2>
     <p>Somos especialistas em projetos estruturais, fundações, visita em obra e laje plana protendida.</p>
   </section>
 
-  <section class="servicos" id="servicos">
+  <section class="servicos" id="servicos" data-aos="fade-up">
     <h2>Serviços</h2>
     <div class="cards">
       <div class="card">
@@ -58,7 +69,7 @@
     </div>
   </section>
 
-  <section class="portfolio" id="portfolio">
+  <section class="portfolio" id="portfolio" data-aos="fade-up">
     <h2>Portfólio</h2>
     <div class="galeria">
       <img src="images/obra1.jpg" alt="Obra 1"/>
@@ -67,26 +78,47 @@
     </div>
   </section>
 
-  <section class="orcamento-contato" id="orcamento">
-    <div class="orcamento">
-      <h2>Solicitar Orçamento</h2>
-      <form action="https://formsubmit.co/rafael20242024@outlook.com" method="POST" target="_blank">
-        <input type="text" name="nome" placeholder="Seu nome" required />
-        <input type="email" name="email" placeholder="Seu e-mail" required />
-        <textarea name="mensagem" placeholder="Descreva seu projeto" required></textarea>
-        <button type="submit">Enviar por E-mail</button>
-      </form>
-    </div>
-    <div class="contato">
-      <h2>Contato</h2>
-      <p>Email: rafael20242024@outlook.com</p>
-      <p>WhatsApp: (27) 99589-3556</p>
-    </div>
-  </section>
-
   <div class="icones-fixos">
-    <a href="https://wa.me/5527995893556" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp"/></a>
-    <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"/></a>
+    <a href="https://wa.me/5527995893556?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank">
+      <img src="images/whatsapp.png" alt="WhatsApp"/>
+    </a>
+    <a href="https://instagram.com" target="_blank">
+      <img src="images/instagram.png" alt="Instagram"/>
+    </a>
   </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        });
+      });
+    });
+
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 80;
+        if (pageYOffset >= sectionTop) current = section.getAttribute("id");
+      });
+
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) link.classList.add("active");
+      });
+    });
+
+    window.addEventListener("load", () => {
+      document.getElementById("preloader").style.display = "none";
+    });
+  </script>
 </body>
 </html>
