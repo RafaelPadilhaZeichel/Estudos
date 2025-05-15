@@ -1,3 +1,4 @@
+
 /* Reset básico */
 * {
   margin: 0;
@@ -7,7 +8,7 @@
 }
 
 body {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   background-color: #1a1a1a;
   color: white;
   line-height: 1.6;
@@ -51,7 +52,7 @@ nav a:hover {
 
 /* Hero */
 .hero {
-  background: url("images/predio.jpg") no-repeat center center/cover;
+  background: url('images/predio.jpg') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -66,12 +67,7 @@ nav a:hover {
 
 /* Seções gerais */
 section {
-  padding: 80px 40px 60px;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  padding: 120px 40px 80px;
 }
 
 /* Sobre */
@@ -86,6 +82,7 @@ h2 {
   gap: 40px;
   margin-top: 30px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
@@ -95,6 +92,12 @@ h2 {
   text-align: center;
   flex: 1;
   min-width: 200px;
+  max-width: 300px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card img {
@@ -113,6 +116,7 @@ h2 {
   gap: 20px;
   flex-wrap: wrap;
   margin-top: 20px;
+  justify-content: center;
 }
 
 .portfolio img {
@@ -120,88 +124,41 @@ h2 {
   max-width: 300px;
   border-radius: 8px;
   object-fit: cover;
+  transition: transform 0.3s;
 }
 
-/* Orçamento + Contato lado a lado */
-.orcamento-contato {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: space-between;
-  background-color: #1e1e1e;
-  padding: 80px 40px;
+.portfolio img:hover {
+  transform: scale(1.03);
 }
 
-.orcamento,
-.contato {
-  flex: 1;
-  min-width: 280px;
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #111;
+  color: #aaa;
+  font-size: 0.9rem;
 }
 
-.orcamento h2,
-.contato h2 {
-  margin-bottom: 20px;
+/* Botão flutuante WhatsApp */
+.btn-whatsapp {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  z-index: 1000;
 }
 
-.orcamento form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.btn-whatsapp img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s;
 }
 
-.orcamento input,
-.orcamento textarea {
-  padding: 12px;
-  border: none;
-  border-radius: 6px;
-  background-color: #2a2a2a;
-  color: white;
-  font-size: 1rem;
+.btn-whatsapp img:hover {
+  transform: scale(1.1);
 }
 
-.orcamento textarea {
-  height: 120px;
-  resize: none;
-}
-
-.orcamento button {
-  padding: 12px;
-  background-color: #e36a1e;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.orcamento button:hover {
-  background-color: #c85d16;
-}
-
-.contato p {
-  margin: 8px 0;
-}
-
-.redes {
-  margin-top: 20px;
-}
-
-.redes a {
-  margin: 0 10px;
-}
-
-.redes img {
-  width: 24px;
-  filter: invert(100%);
-  transition: filter 0.3s;
-}
-
-.redes img:hover {
-  filter: invert(65%) sepia(80%) saturate(400%) hue-rotate(-10deg);
-}
-
-/* Ícones fixos (canto inferior direito) */
+/* Ícones fixos */
 .icones-fixos {
   position: fixed;
   bottom: 20px;
@@ -243,11 +200,8 @@ h2 {
   .orcamento-contato {
     flex-direction: column;
   }
+
+  section {
+    padding: 100px 20px 60px;
+  }
 }
-
-nav a.active {
-  color: #e36a1e;
-  font-weight: bold;
-}
-
-

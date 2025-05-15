@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -5,23 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ÉRGO Estruturas</title>
   <link rel="stylesheet" href="style.css"/>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     html {
       scroll-behavior: smooth;
     }
-    #preloader {
-      background: #1a1a1a url('images/loading.gif') no-repeat center center;
-      background-size: 60px;
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      z-index: 9999;
-    }
   </style>
 </head>
 <body>
-  <div id="preloader"></div>
+
+  <!-- Botão de modo claro/escuro -->
+  <button id="modo-btn">🌙</button>
 
   <header>
     <div class="logo">ÉRGO</div>
@@ -31,7 +25,10 @@
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#orcamento">Orçamento</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#trabalhe">Trabalhe Conosco</a></li>
       </ul>
     </nav>
   </header>
@@ -42,83 +39,113 @@
     </div>
   </section>
 
-  <section class="sobre" id="sobre" data-aos="fade-up">
+  <section class="sobre" id="sobre">
     <h2>Sobre Nós</h2>
     <p>Somos especialistas em projetos estruturais, fundações, visita em obra e laje plana protendida.</p>
+    <p id="contador">+100 projetos realizados</p>
   </section>
 
-  <section class="servicos" id="servicos" data-aos="fade-up">
+  <section class="servicos" id="servicos">
     <h2>Serviços</h2>
     <div class="cards">
       <div class="card">
         <img src="images/estrutura.png" alt="Projeto Estrutural"/>
-        <p>Projeto Estrutural</p>
+        <p><strong>Projeto Estrutural</strong></p>
+        <p>Detalhamento completo de estruturas com segurança e economia.</p>
       </div>
       <div class="card">
         <img src="images/fundacao.png" alt="Fundações"/>
-        <p>Fundações</p>
+        <p><strong>Fundações</strong></p>
+        <p>Projetos com estacas, sapatas, blocos e radier.</p>
       </div>
       <div class="card">
         <img src="images/visita.png" alt="Visita Técnica"/>
-        <p>Visita Técnica</p>
+        <p><strong>Visita Técnica</strong></p>
+        <p>Acompanhamento de obra para garantir execução fiel ao projeto.</p>
       </div>
       <div class="card">
         <img src="images/laje.png" alt="Laje Protendida"/>
-        <p>Laje Protendida</p>
+        <p><strong>Laje Protendida</strong></p>
+        <p>Maior vão livre, redução de pilares e economia estrutural.</p>
       </div>
     </div>
   </section>
 
-  <section class="portfolio" id="portfolio" data-aos="fade-up">
+  <section class="portfolio" id="portfolio">
     <h2>Portfólio</h2>
     <div class="galeria">
-      <img src="images/obra1.jpg" alt="Obra 1"/>
-      <img src="images/obra2.jpg" alt="Obra 2"/>
-      <img src="images/obra3.jpg" alt="Obra 3"/>
+      <img src="images/antes.jpg" alt="Antes"/>
+      <img src="images/depois.jpg" alt="Depois"/>
+    </div>
+    <a class="btn-pdf" href="portfolio.pdf" download>📄 Baixar Portfólio PDF</a>
+  </section>
+
+  <section class="depoimentos" id="depoimentos">
+    <h2>Depoimentos</h2>
+    <blockquote>"Serviço excelente e rápido, recomendo muito!" – João Silva</blockquote>
+    <blockquote>"Muito atenciosos e com um projeto bem detalhado." – Ana Souza</blockquote>
+  </section>
+
+  <section class="faq" id="faq">
+    <h2>Perguntas Frequentes</h2>
+    <details>
+      <summary>Quanto tempo leva para entregar um projeto?</summary>
+      <p>Entre 5 a 10 dias úteis, dependendo da complexidade.</p>
+    </details>
+    <details>
+      <summary>Vocês atendem em todo o Brasil?</summary>
+      <p>Sim, fazemos atendimento remoto via WhatsApp e e-mail.</p>
+    </details>
+  </section>
+
+  <section class="blog" id="blog">
+    <h2>Dicas Técnicas</h2>
+    <article>
+      <h3>Vantagens da Laje Protendida</h3>
+      <p>Redução de pilares, maior flexibilidade arquitetônica e economia de materiais.</p>
+    </article>
+  </section>
+
+  <section class="certificacoes">
+    <h2>Certificações & Parcerias</h2>
+    <div class="logos">
+      <img src="images/crea.png" alt="CREA"/>
+      <img src="images/parceiro1.png" alt="Parceiro"/>
     </div>
   </section>
 
+  <section class="trabalhe" id="trabalhe">
+    <h2>Trabalhe Conosco</h2>
+    <form>
+      <input type="text" placeholder="Nome completo" required />
+      <input type="email" placeholder="E-mail" required />
+      <input type="file" />
+      <button type="submit">Enviar Currículo</button>
+    </form>
+  </section>
+
+  <section class="mapa">
+    <h2>Onde Estamos</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18...etc..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
   <div class="icones-fixos">
-    <a href="https://wa.me/5527995893556?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank">
-      <img src="images/whatsapp.png" alt="WhatsApp"/>
-    </a>
-    <a href="https://instagram.com" target="_blank">
-      <img src="images/instagram.png" alt="Instagram"/>
-    </a>
+    <a href="https://wa.me/5527995893556" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp"/></a>
+    <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"/></a>
   </div>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <footer>
+    <p>&copy; 2025 ÉRGO Estruturas. Todos os direitos reservados.</p>
+  </footer>
+
   <script>
-    AOS.init();
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-          behavior: "smooth"
-        });
-      });
-    });
-
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll("nav ul li a");
-
-    window.addEventListener("scroll", () => {
-      let current = "";
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop - 80;
-        if (pageYOffset >= sectionTop) current = section.getAttribute("id");
-      });
-
-      navLinks.forEach((link) => {
-        link.classList.remove("active");
-        if (link.getAttribute("href").includes(current)) link.classList.add("active");
-      });
-    });
-
-    window.addEventListener("load", () => {
-      document.getElementById("preloader").style.display = "none";
+    // Dark/Light mode
+    const btn = document.getElementById('modo-btn');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('claro');
+      btn.textContent = document.body.classList.contains('claro') ? "🌞" : "🌙";
     });
   </script>
+
 </body>
 </html>
