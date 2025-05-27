@@ -1,151 +1,145 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ÉRGO Estruturas</title>
-  <link rel="stylesheet" href="style.css"/>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ÉRGO Estruturas - Soluções em engenharia estrutural, projetos, fundações e lajes protendidas">
+  <title>ÉRGO Estruturas - Soluções em Engenharia</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
-  <!-- Botão de modo claro/escuro -->
-  <button id="modo-btn">🌙</button>
-
   <header>
-    <div class="logo">ÉRGO</div>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#depoimentos">Depoimentos</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#trabalhe">Trabalhe Conosco</a></li>
-      </ul>
-    </nav>
+    <div class="header-container">
+      <div class="logo">ÉRGO</div>
+      <nav>
+        <ul>
+          <li class="active"><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li class="has-submenu">
+            <a href="servicos.html">Serviços</a>
+            <ul class="submenu">
+              <li><a href="servicos.html#projetos">Projetos Estruturais</a></li>
+              <li><a href="servicos.html#fundacoes">Fundações</a></li>
+              <li><a href="servicos.html#visitas">Visitas Técnicas</a></li>
+              <li><a href="servicos.html#lajes">Lajes Protendidas</a></li>
+            </ul>
+          </li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero" id="inicio">
-    <div class="hero-text">
-      <h1>Projetos Estruturais com Qualidade</h1>
-    </div>
-  </section>
+  <main>
+    <section class="hero fade-in">
+      <h1>Soluções Estruturais Inteligentes</h1>
+      <p>Projetos personalizados e execução com excelência para sua obra</p>
+      <a href="contato.html" class="btn">Solicite um Orçamento</a>
+    </section>
 
-  <section class="sobre" id="sobre">
-    <h2>Sobre Nós</h2>
-    <p>Somos especialistas em projetos estruturais, fundações, visita em obra e laje plana protendida.</p>
-    <p id="contador">+100 projetos realizados</p>
-  </section>
-
-  <section class="servicos" id="servicos">
-    <h2>Serviços</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="images/estrutura.png" alt="Projeto Estrutural"/>
-        <p><strong>Projeto Estrutural</strong></p>
-        <p>Detalhamento completo de estruturas com segurança e economia.</p>
+    <section class="pagina">
+      <h2>Nossos Diferenciais</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="images/diferencial-1.jpg" alt="Tecnologia" class="card-img">
+          <div class="card-body">
+            <h3 class="card-title">Tecnologia Avançada</h3>
+            <p>Utilizamos softwares de última geração para modelagem 3D e cálculos estruturais precisos.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/diferencial-2.jpg" alt="Equipe" class="card-img">
+          <div class="card-body">
+            <h3 class="card-title">Equipe Qualificada</h3>
+            <p>Engenheiros especializados com mais de 15 anos de experiência no mercado.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/diferencial-3.jpg" alt="Garantia" class="card-img">
+          <div class="card-body">
+            <h3 class="card-title">Garantia de Qualidade</h3>
+            <p>Todos nossos projetos são revisados e acompanhados até a conclusão da obra.</p>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <img src="images/fundacao.png" alt="Fundações"/>
-        <p><strong>Fundações</strong></p>
-        <p>Projetos com estacas, sapatas, blocos e radier.</p>
+
+      <div class="cta-section" style="text-align: center; margin: 3rem 0;">
+        <h2>Primeira Consultoria Gratuita</h2>
+        <p>Entre em contato e agende uma visita técnica sem compromisso</p>
+        <a href="contato.html" class="btn">Agendar Consultoria</a>
       </div>
-      <div class="card">
-        <img src="images/visita.png" alt="Visita Técnica"/>
-        <p><strong>Visita Técnica</strong></p>
-        <p>Acompanhamento de obra para garantir execução fiel ao projeto.</p>
+
+      <div class="depoimentos">
+        <h2>O que nossos clientes dizem</h2>
+        <div class="grid">
+          <div class="card">
+            <div class="card-body">
+              <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                <img src="images/cliente-1.jpg" alt="Cliente" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 1rem;">
+                <div>
+                  <h4 style="margin: 0;">Carlos Mendes</h4>
+                  <small>Construtora Alpha</small>
+                </div>
+              </div>
+              <p>"A ÉRGO desenvolveu o projeto estrutural do nosso último edifício com perfeição, otimizando materiais e prazos."</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                <img src="images/cliente-2.jpg" alt="Cliente" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 1rem;">
+                <div>
+                  <h4 style="margin: 0;">Ana Paula Silva</h4>
+                  <small>Arquiteta</small>
+                </div>
+              </div>
+              <p>"Trabalhar com a equipe da ÉRGO foi uma experiência excelente. O atendimento e a competência técnica são impecáveis."</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <img src="images/laje.png" alt="Laje Protendida"/>
-        <p><strong>Laje Protendida</strong></p>
-        <p>Maior vão livre, redução de pilares e economia estrutural.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="portfolio" id="portfolio">
-    <h2>Portfólio</h2>
-    <div class="galeria">
-      <img src="images/antes.jpg" alt="Antes"/>
-      <img src="images/depois.jpg" alt="Depois"/>
-    </div>
-    <a class="btn-pdf" href="portfolio.pdf" download>📄 Baixar Portfólio PDF</a>
-  </section>
-
-  <section class="depoimentos" id="depoimentos">
-    <h2>Depoimentos</h2>
-    <blockquote>"Serviço excelente e rápido, recomendo muito!" – João Silva</blockquote>
-    <blockquote>"Muito atenciosos e com um projeto bem detalhado." – Ana Souza</blockquote>
-  </section>
-
-  <section class="faq" id="faq">
-    <h2>Perguntas Frequentes</h2>
-    <details>
-      <summary>Quanto tempo leva para entregar um projeto?</summary>
-      <p>Entre 5 a 10 dias úteis, dependendo da complexidade.</p>
-    </details>
-    <details>
-      <summary>Vocês atendem em todo o Brasil?</summary>
-      <p>Sim, fazemos atendimento remoto via WhatsApp e e-mail.</p>
-    </details>
-  </section>
-
-  <section class="blog" id="blog">
-    <h2>Dicas Técnicas</h2>
-    <article>
-      <h3>Vantagens da Laje Protendida</h3>
-      <p>Redução de pilares, maior flexibilidade arquitetônica e economia de materiais.</p>
-    </article>
-  </section>
-
-  <section class="certificacoes">
-    <h2>Certificações & Parcerias</h2>
-    <div class="logos">
-      <img src="images/crea.png" alt="CREA"/>
-      <img src="images/parceiro1.png" alt="Parceiro"/>
-    </div>
-  </section>
-
-  <section class="trabalhe" id="trabalhe">
-    <h2>Trabalhe Conosco</h2>
-    <form>
-      <input type="text" placeholder="Nome completo" required />
-      <input type="email" placeholder="E-mail" required />
-      <input type="file" />
-      <button type="submit">Enviar Currículo</button>
-    </form>
-  </section>
-
-  <section class="mapa">
-    <h2>Onde Estamos</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18...etc..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  </section>
-
-  <div class="icones-fixos">
-    <a href="https://wa.me/5527995893556" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp"/></a>
-    <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"/></a>
-  </div>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 ÉRGO Estruturas. Todos os direitos reservados.</p>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>ÉRGO Estruturas</h3>
+        <p>Soluções inteligentes em engenharia estrutural para sua obra.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Links Rápidos</h3>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contato</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Av. Brasil, 1000, Vitória - ES</p>
+        <p><i class="fas fa-phone"></i> (27) 99589-3556</p>
+        <p><i class="fas fa-envelope"></i> contato@ergoestruturas.com.br</p>
+      </div>
+      <div class="copyright">
+        <p>© 2025 ÉRGO Estruturas. Todos os direitos reservados.</p>
+      </div>
+    </div>
   </footer>
 
-  <script>
-    // Dark/Light mode
-    const btn = document.getElementById('modo-btn');
-    btn.addEventListener('click', () => {
-      document.body.classList.toggle('claro');
-      btn.textContent = document.body.classList.contains('claro') ? "🌞" : "🌙";
-    });
-  </script>
-
+  <div class="icones-fixos">
+    <a href="https://wa.me/5527995893556" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp"></a>
+  </div>
 </body>
 </html>
