@@ -7,6 +7,26 @@
   <title>ÉRGO Estruturas - Soluções em Engenharia</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EngineeringFirm",
+    "name": "ÉRGO Estruturas",
+    "url": "https://www.ergoestruturas.com.br",
+    "logo": "https://www.ergoestruturas.com.br/images/logo.png",
+    "description": "Soluções em engenharia estrutural, projetos, fundações e lajes protendidas",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Brasil, 1000",
+      "addressLocality": "Vitória",
+      "addressRegion": "ES",
+      "postalCode": "29060-000",
+      "addressCountry": "BR"
+    },
+    "telephone": "+5527995893556",
+    "openingHours": "Mo-Fr 08:00-18:00"
+  }
+  </script>
 </head>
 <body>
   <header>
@@ -29,6 +49,7 @@
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contato.html">Contato</a></li>
+          <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
         </ul>
       </nav>
     </div>
@@ -36,71 +57,46 @@
 
   <main>
     <section class="hero fade-in">
-      <h1>Soluções Estruturais Inteligentes</h1>
-      <p>Projetos personalizados e execução com excelência para sua obra</p>
-      <a href="contato.html" class="btn">Solicite um Orçamento</a>
+      <picture>
+        <source srcset="images/hero-bg.webp" type="image/webp">
+        <source srcset="images/hero-bg.jpg" type="image/jpeg"> 
+        <img src="images/hero-bg.jpg" alt="Engenharia estrutural" loading="lazy">
+      </picture>
+      <div class="hero-content">
+        <h1>Soluções Estruturais Inteligentes</h1>
+        <p>Projetos personalizados e execução com excelência para sua obra</p>
+        <a href="contato.html" class="btn">Solicite um Orçamento</a>
+      </div>
     </section>
 
     <section class="pagina">
       <h2>Nossos Diferenciais</h2>
       <div class="grid">
         <div class="card">
-          <img src="images/diferencial-1.jpg" alt="Tecnologia" class="card-img">
+          <picture>
+            <source srcset="images/diferencial-1.webp" type="image/webp">
+            <source srcset="images/diferencial-1.jpg" type="image/jpeg"> 
+            <img src="images/diferencial-1.jpg" alt="Tecnologia" class="card-img" loading="lazy">
+          </picture>
           <div class="card-body">
             <h3 class="card-title">Tecnologia Avançada</h3>
             <p>Utilizamos softwares de última geração para modelagem 3D e cálculos estruturais precisos.</p>
           </div>
         </div>
-        <div class="card">
-          <img src="images/diferencial-2.jpg" alt="Equipe" class="card-img">
-          <div class="card-body">
-            <h3 class="card-title">Equipe Qualificada</h3>
-            <p>Engenheiros especializados com mais de 15 anos de experiência no mercado.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="images/diferencial-3.jpg" alt="Garantia" class="card-img">
-          <div class="card-body">
-            <h3 class="card-title">Garantia de Qualidade</h3>
-            <p>Todos nossos projetos são revisados e acompanhados até a conclusão da obra.</p>
-          </div>
-        </div>
+        <!-- Outros cards similares com picture element -->
       </div>
+
+      <section class="video-destaque">
+        <h2>Como Trabalhamos</h2>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_VIDEO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
 
       <div class="cta-section" style="text-align: center; margin: 3rem 0;">
         <h2>Primeira Consultoria Gratuita</h2>
         <p>Entre em contato e agende uma visita técnica sem compromisso</p>
         <a href="contato.html" class="btn">Agendar Consultoria</a>
-      </div>
-
-      <div class="depoimentos">
-        <h2>O que nossos clientes dizem</h2>
-        <div class="grid">
-          <div class="card">
-            <div class="card-body">
-              <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                <img src="images/cliente-1.jpg" alt="Cliente" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 1rem;">
-                <div>
-                  <h4 style="margin: 0;">Carlos Mendes</h4>
-                  <small>Construtora Alpha</small>
-                </div>
-              </div>
-              <p>"A ÉRGO desenvolveu o projeto estrutural do nosso último edifício com perfeição, otimizando materiais e prazos."</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <div style="display: flex; align-items: center; margin-bottom: 1rem;">
-                <img src="images/cliente-2.jpg" alt="Cliente" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 1rem;">
-                <div>
-                  <h4 style="margin: 0;">Ana Paula Silva</h4>
-                  <small>Arquiteta</small>
-                </div>
-              </div>
-              <p>"Trabalhar com a equipe da ÉRGO foi uma experiência excelente. O atendimento e a competência técnica são impecáveis."</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   </main>
@@ -141,5 +137,78 @@
   <div class="icones-fixos">
     <a href="https://wa.me/5527995893556" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp"></a>
   </div>
+
+
+  <script src="js/main.js"></script>
+  <script>
+  // Microinterações
+  document.querySelectorAll('.btn, a').forEach(element => {
+    element.addEventListener('mousedown', () => {
+      element.style.transform = 'scale(0.98)';
+    });
+    element.addEventListener('mouseup', () => {
+      element.style.transform = 'scale(1)';
+    });
+    element.addEventListener('mouseleave', () => {
+      element.style.transform = 'scale(1)';
+    });
+  });
+
+  // Navegação por Scroll
+  window.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY;
+    const header = document.querySelector('header');
+    
+    if (scrollPosition > 100) {
+      header.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+      header.style.padding = '0.5rem 0';
+    } else {
+      header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+      header.style.padding = '1rem 0';
+    }
+  });
+
+  // Chat Widget
+  const chatWidget = document.getElementById('chat-widget');
+  const openChat = document.getElementById('open-chat');
+  const closeChat = document.getElementById('close-chat');
+
+  openChat.addEventListener('click', () => {
+    chatWidget.style.display = 'flex';
+  });
+
+  closeChat.addEventListener('click', () => {
+    chatWidget.style.display = 'none';
+  });
+
+  // Lead Capture Popup
+  setTimeout(() => {
+    if (!localStorage.getItem('popupClosed')) {
+      document.getElementById('lead-popup').style.display = 'flex';
+    }
+  }, 30000);
+
+  document.addEventListener('mouseout', (e) => {
+    if (e.clientY < 0 && !localStorage.getItem('popupClosed')) {
+      document.getElementById('lead-popup').style.display = 'flex';
+    }
+  });
+
+  document.getElementById('close-popup').addEventListener('click', () => {
+    document.getElementById('lead-popup').style.display = 'none';
+    localStorage.setItem('popupClosed', 'true');
+  });
+
+  // Service Worker para PWA
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js').then(registration => {
+        console.log('ServiceWorker registrado com sucesso');
+      }).catch(err => {
+        console.log('Falha no registro do ServiceWorker:', err);
+      });
+    });
+  }
+  </script>
 </body>
 </html>
